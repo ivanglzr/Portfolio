@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c7812e7e0b.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
@@ -18,22 +22,144 @@
       </nav>
       <div id="toggle-theme-container">
         <button id="toggle-theme-btn">
-          <img src="./assets/icons/sun.svg" alt="" id="toggle-theme-img" />
-          <span>Light mode</span>
+          <i class="fa-solid fa-sun" id="toggle-theme-icon"></i>
+          <span id="toggle-theme-txt">Light mode</span>
         </button>
       </div>
     </header>
-    <main>
-      <aside id="about" class="main-about-div floated-div">
-        <img src="" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
-          praesentium cupiditate vero dolorem reprehenderit veniam sit quia
-          minus, dignissimos a!
-        </p>
+    <main id="about">
+      <aside id="about-aside" class="main-about-div floated-div">
+        <img
+          id="about-aside-img"
+          src="https://www.fichajes.com/build/images/player-covers/ronald-araujo.af58046a.jpg"
+          alt=""
+        />
+        <nav id="social-nav">
+          <ul>
+            <li>
+              <a href="" target="_blank">
+                <i
+                  class="fa-solid fa-file icon"
+                  style="--hover-color: #777"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ivanglzr" target="_blank">
+                <i
+                  class="fa-brands fa-github icon"
+                  style="--hover-color: #888"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank">
+                <i
+                  class="fa-brands fa-instagram icon"
+                  style="--hover-color: #ffc800"
+                ></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div id="about-info">
+          <h2 class="subtitle">About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+            praesentium cupiditate vero dolorem reprehenderit veniam sit quia
+            minus, dignissimos a! Lorem ipsum dolor sit amet consectetur,
+          </p>
+        </div>
       </aside>
       <section id="about-introduction" class="main-about-div floated-div">
-        <h2 class="subtitle">Hi, I'm <strong>Ivan Gonzalez</strong></h2>
+        <h2 class="subtitle">Projects</h2>
+        <div id="projects-container">
+          <div id="skills">
+            <div class="skill">
+              <i
+                class="fa-brands fa-html5 icon"
+                style="--hover-color: #ffa600"
+              ></i>
+              <span>HTML</span>
+            </div>
+            <div class="skill">
+              <i
+                class="fa-brands fa-css3-alt icon"
+                style="--hover-color: #16f"
+              ></i>
+              <span>CSS</span>
+            </div>
+            <div class="skill">
+              <div class="skill">
+                <i
+                  class="fa-brands fa-bootstrap icon"
+                  style="--hover-color: #c216d2"
+                ></i>
+                <span>Bootstrap</span>
+              </div>
+              <i
+                class="fa-brands fa-square-js icon"
+                style="--hover-color: #d9e834"
+              ></i>
+              <span>JS</span>
+            </div>
+            <div class="skill">
+              <i
+                class="fa-brands fa-react icon"
+                style="--hover-color: #45e9ff"
+              ></i>
+              <span>React</span>
+            </div>
+            <div class="skill">
+              <i
+                class="fa-brands fa-angular icon"
+                style="--hover-color: #fb2626"
+              ></i>
+              <span>Angular</span>
+            </div>
+            <div class="skill">
+              <i
+                class="fa-brands fa-node-js icon"
+                style="--hover-color: #30bb1d"
+              ></i>
+              <span>NodeJS</span>
+            </div>
+          </div>
+          <div id="projects">
+            <div class="row">
+              <div class="project-card">
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_640.jpg"
+                  alt=""
+                />
+                <span>Title</span>
+              </div>
+              <div class="project-card">
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_640.jpg"
+                  alt=""
+                />
+                <span>Title</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="project-card">
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_640.jpg"
+                  alt=""
+                />
+                <span>Title</span>
+              </div>
+              <div class="project-card">
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_640.jpg"
+                  alt=""
+                />
+                <span>Title</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
