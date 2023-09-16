@@ -7,11 +7,11 @@ toggleThemeBtn.addEventListener("click", () => {
   document.body.classList.toggle("light");
 
   if (toggleThemeSpan.innerHTML.includes("Light")) {
-    toggleThemeSpan.innerHTML = "Dark Theme";
+    toggleThemeSpan.innerHTML = "Dark Mode";
     toggleThemeIcon.classList.add("fa-moon");
     toggleThemeIcon.classList.remove("fa-sun");
   } else {
-    toggleThemeSpan.innerHTML = "Light Theme";
+    toggleThemeSpan.innerHTML = "Light Mode";
     toggleThemeIcon.classList.add("fa-sun");
     toggleThemeIcon.classList.remove("fa-moon");
   }

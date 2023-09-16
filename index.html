@@ -15,15 +15,15 @@
       <h1 id="title">Ivan Gonzalez</h1>
       <nav id="header-nav">
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact me</a></li>
+          <li><a target="_blank" href="#">Certificates</a></li>
+          <li><a target="_blank" href="#">Projects</a></li>
+          <li><a target="_blank" href="#">Contact me</a></li>
         </ul>
       </nav>
       <div id="toggle-theme-container">
         <button id="toggle-theme-btn">
-          <i class="fa-solid fa-sun" id="toggle-theme-icon"></i>
-          <span id="toggle-theme-txt">Light mode</span>
+          <i class="fa-solid fa-moon" id="toggle-theme-icon"></i>
+          <span id="toggle-theme-txt">Dark mode</span>
         </button>
       </div>
     </header>
@@ -56,84 +56,98 @@
               <a href="https://instagram.com" target="_blank">
                 <i
                   class="fa-brands fa-instagram icon"
-                  style="--hover-color: #ffc800"
+                  style="--hover-color: #f6336c"
                 ></i>
               </a>
             </li>
           </ul>
         </nav>
+        <div id="contact-info">
+          <a href="tel:672-27-37-51">
+            <span>+34 672 27 37 51</span>
+          </a>
+          <a
+            target="_blank"
+            href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkVXldrsqdfmBsQmfpchLBprMnsbsBjcfjxVzJFZDxMDXqwqxBwgjxpqXGtwRBGBSCmsWT"
+          >
+            <span>ivanglzr01@gmail.com</span>
+          </a>
+        </div>
         <div id="about-info">
           <h2 class="subtitle">About Me</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
             praesentium cupiditate vero dolorem reprehenderit veniam sit quia
-            minus, dignissimos a! Lorem ipsum dolor sit amet consectetur,
+            minus, dignissimos a! Lorem ipsum dolor sit amet consectetur, Lorem
+            ipsum dolor sit amet consectetur, adipisicing elit. Itaque totam
+            nesciunt enim quia. Harum excepturi, sapiente assumenda natus ullam
+            molestiae quis cum magni corporis minima inventore error, neque
           </p>
         </div>
       </aside>
-      <section id="projects" class="main-div floated-div">
+      <section id="projects-skills" class="main-div floated-div">
         <h2 class="subtitle">Projects</h2>
         <div id="projects-container">
           <div id="skills">
             <div class="skill">
               <i
                 class="fa-brands fa-html5 icon"
-                style="--hover-color: #ffa600"
+                style="--hover-color: #dd4b25"
               ></i>
               <span>HTML</span>
             </div>
             <div class="skill">
               <i
                 class="fa-brands fa-css3-alt icon"
-                style="--hover-color: #16f"
+                style="--hover-color: #254bdd"
               ></i>
               <span>CSS</span>
             </div>
             <div class="skill">
               <i
                 class="fa-brands fa-bootstrap icon"
-                style="--hover-color: #c216d2"
+                style="--hover-color: #7c4db3"
               ></i>
               <span>Bootstrap</span>
             </div>
             <div class="skill">
               <i
                 class="fa-brands fa-square-js icon"
-                style="--hover-color: #d9e834"
+                style="--hover-color: #efd81d"
               ></i>
               <span>JS</span>
             </div>
             <div class="skill">
               <i
                 class="fa-brands fa-react icon"
-                style="--hover-color: #45e9ff"
+                style="--hover-color: #5ed4f3"
               ></i>
               <span>React</span>
             </div>
             <div class="skill">
               <i
                 class="fa-brands fa-angular icon"
-                style="--hover-color: #fb2626"
+                style="--hover-color: #d6002f"
               ></i>
               <span>Angular</span>
             </div>
             <div class="skill">
               <i
                 class="fa-brands fa-node-js icon"
-                style="--hover-color: #30bb1d"
+                style="--hover-color: #509941"
               ></i>
               <span>NodeJS</span>
             </div>
           </div>
           <div id="projects">
             <div class="project-card">
-              <img
-                src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_640.jpg"
-                alt=""
-              />
+              <img src="./assets/images/angular_blog.png" alt="" />
               <div class="project-info">
                 <div class="project-technologies">
-                  <span>#HTML</span><span>#CSS</span>
+                  <span>#Angular</span>
+                  <span>#CSS</span>
+                  <span>#NodeJS</span>
+                  <span>#MongoDB</span>
                 </div>
                 <div class="project-about">
                   <h2 class="subtitle">Blog API REST FULL</h2>
@@ -145,47 +159,108 @@
                   </p>
                 </div>
                 <div class="project-btns">
-                  <button class="btn">
-                    <a href="#">View Online</a>
-                  </button>
-                  <button class="btn-secondary">
-                    <a href="#">View Code</a>
-                  </button>
+                  <a target="_blank" href="#">
+                    <button class="btn">View Online</button>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/ivanglzr/CursoAngular.git"
+                  >
+                    <btn class="btn-secondary">View Code</btn>
+                  </a>
                 </div>
               </div>
             </div>
             <div class="project-card">
-              <img
-                src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_640.jpg"
-                alt=""
-              />
-              <div class="project-technologies">
-                <span>#HTML</span><span>#CSS</span><span>#JavaScript</span>
+              <img src="./assets/images/users_api.png" alt="" />
+              <div class="project-info">
+                <div class="project-technologies">
+                  <span>#Angular</span>
+                  <span>#CSS</span>
+                  <span>#NodeJS</span>
+                  <span>#MongoDB</span>
+                </div>
+                <div class="project-about">
+                  <h2 class="subtitle">Users API REST FULL</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Veritatis aliquam minima tempore ratione repudiandae veniam
+                    illo iure culpa quo? Ex nemo itaque soluta dolores unde.
+                  </p>
+                </div>
+                <div class="project-btns">
+                  <a target="_blank" href="#">
+                    <button class="btn">View Online</button>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/ivanglzr/UserFormAngular.git"
+                  >
+                    <btn class="btn-secondary">View Code</btn>
+                  </a>
+                </div>
               </div>
-              <div class="project-info"></div>
-              <div class="project-btns"></div>
             </div>
             <div class="project-card">
-              <img
-                src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_640.jpg"
-                alt=""
-              />
-              <div class="project-technologies">
-                <span>#React</span><span>#NodeJS</span><span>#Bootstrap</span>
+              <img src="./assets/images/weather_app.png" alt="" />
+              <div class="project-info">
+                <div class="project-technologies">
+                  <span>#HTML</span><span>#CSS</span><span>#JavaScript</span>
+                </div>
+                <div class="project-about">
+                  <h2 class="subtitle">Weather App</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore reiciendis quod sint ad eveniet, odio atque placeat
+                    harum. Qui odit dolor, iusto quod fuga neque at ratione
+                    saepe tenetur possimus.
+                  </p>
+                </div>
+                <div class="project-btns">
+                  <a
+                    target="_blank"
+                    href="https://weather-app-woad-zeta.vercel.app/"
+                  >
+                    <button class="btn">View Online</button>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/ivanglzr/WeatherApp.git"
+                  >
+                    <btn class="btn-secondary">View Code</btn>
+                  </a>
+                </div>
               </div>
-              <div class="project-info"></div>
-              <div class="project-btns"></div>
             </div>
             <div class="project-card">
-              <img
-                src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_640.jpg"
-                alt=""
-              />
-              <div class="project-technologies">
-                <span>#Angular</span><span>#CSS</span><span>#NodeJS</span>
+              <img src="./assets/images/quiz_game.png" alt="" />
+              <div class="project-info">
+                <div class="project-technologies">
+                  <span>#Angular</span>
+                  <span>#CSS</span>
+                </div>
+                <div class="project-about">
+                  <h2 class="subtitle">Quiz Game</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima explicabo delectus expedita dolores. Voluptate
+                    delectus quisquam fugit? Nulla nostrum, architecto nihil qui
+                    suscipit, delectus quibusdam corrupti voluptatibus vitae,
+                    officia commodi!
+                  </p>
+                </div>
+                <div class="project-btns">
+                  <a target="_blank" href="https://quiz-game-woad.vercel.app/">
+                    <button class="btn">View Online</button>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/ivanglzr/QuizGame.git"
+                  >
+                    <btn class="btn-secondary">View Code</btn>
+                  </a>
+                </div>
               </div>
-              <div class="project-info"></div>
-              <div class="project-btns"></div>
             </div>
           </div>
         </div>

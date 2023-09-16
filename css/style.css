@@ -18,8 +18,16 @@
   font-family: "Poppins", system-ui, "Segoe UI", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .floated-div {
   background: var(--floated-divs-bg);
+}
+
+a {
+  text-decoration: none;
 }
 
 .btn-secondary,
@@ -30,23 +38,15 @@
   padding: 10px 20px;
   border-radius: 10px;
   font-size: 18px;
+  color: #fff;
   border: none;
   cursor: pointer;
   transition: 0.3s;
-
-  & a {
-    text-decoration: none;
-    color: #fff;
-  }
 }
 
 .btn-secondary {
   background: #fff;
   color: var(--btn-color);
-
-  & a {
-    color: var(--btn-color);
-  }
 }
 
 .btn-secondary:hover,
@@ -100,8 +100,7 @@ body.light {
 
       & a {
         color: var(--text-color);
-        font-size: 1em;
-        text-decoration: none;
+        font-size: 16px;
         transition: 0.2s linear;
 
         &:hover {
@@ -144,10 +143,11 @@ body.light {
 .icon {
   font-size: 25px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.3s;
 
   &:hover {
     color: var(--hover-color);
+    transform: translateY(-3px);
   }
 }
 
@@ -174,13 +174,6 @@ main {
       border-radius: 50%;
     }
 
-    & #about-info {
-      margin-top: 25px;
-      & p {
-        text-align: left;
-      }
-    }
-
     & #social-nav {
       width: 100%;
       display: flex;
@@ -198,9 +191,31 @@ main {
         }
       }
     }
+
+    & #contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+
+      & a {
+        color: var(--text-color);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    & #about-info {
+      margin-top: 15px;
+      & p {
+        text-align: left;
+      }
+    }
   }
 
-  & #projects {
+  & #projects-skills {
     width: 75%;
     padding: 20px;
 
@@ -230,15 +245,17 @@ main {
           background: var(--body-bg);
           border: 5px solid var(--body-bg);
 
-          /* display: flex; */
-          /* flex: wrap; */
           height: 400px;
           vertical-align: baseline;
-          margin: 10px;
+          margin: 20px 10px;
           padding: 10px;
           text-align: left;
           border-radius: 10px;
           overflow: hidden;
+
+          &:first-child {
+            margin-top: 0;
+          }
 
           & img {
             width: 30%;
