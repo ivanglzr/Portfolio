@@ -7,8 +7,8 @@
   --text-color: #fff;
   --opposite-text-color: #000;
   --link-hover-color: #cfcfcf;
-  --border-bottom-color: #474747;
-  --divs-border-radius: 20px;
+  --border-bottom-color: #3a3a3a;
+  --btn-color: #1166ff;
 }
 
 * {
@@ -22,6 +22,38 @@
   background: var(--floated-divs-bg);
 }
 
+.btn-secondary,
+.btn {
+  background: var(--btn-color);
+  margin-top: 10%;
+  margin-right: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  & a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.btn-secondary {
+  background: #fff;
+  color: var(--btn-color);
+
+  & a {
+    color: var(--btn-color);
+  }
+}
+
+.btn-secondary:hover,
+.btn:hover {
+  opacity: 0.8;
+}
+
 body {
   display: grid;
   gap: 10px;
@@ -33,10 +65,8 @@ body {
 
 body.light {
   --body-bg: #e2e2e2;
-  --opposite-bg-color: #000000;
   --floated-divs-bg: #fff;
   --text-color: #000;
-  --opposite-text-color: #fff;
   --link-hover-color: #676767;
   --border-bottom-color: #ccc;
 }
@@ -48,7 +78,7 @@ body.light {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-radius: var(--divs-border-radius);
+  border-radius: 20px;
   text-align: center;
 
   #title {
@@ -126,13 +156,14 @@ main {
   align-items: stretch;
   gap: 10px;
 
-  .main-about-div {
+  .main-div {
     text-align: center;
-    border-radius: var(--divs-border-radius);
+    border-radius: 20px;
   }
 
   & aside {
     width: 25%;
+    height: min-content;
     padding: 20px;
 
     & #about-aside-img {
@@ -169,21 +200,17 @@ main {
     }
   }
 
-  & #about-introduction {
+  & #projects {
     width: 75%;
     padding: 20px;
 
     & #projects-container {
-      display: flex;
-      align-items: stretch;
-
       & #skills {
-        height: 100%;
-        flex: 0.1;
+        height: 10%;
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
 
         & .skill {
           margin: 5px;
@@ -195,35 +222,51 @@ main {
       }
 
       & #projects {
-        flex: 0.9;
+        height: 90%;
+        width: 100%;
         padding: 20px;
 
-        & .row {
-          width: 100%;
-          height: 50%;
-          display: flex;
-          justify-content: space-between;
-          margin: 10px 0;
+        & .project-card {
+          background: var(--body-bg);
+          border: 5px solid var(--body-bg);
 
-          & .project-card {
-            background: var(--opposite-bg-color);
-            border: 5px solid var(--opposite-bg-color);
+          /* display: flex; */
+          /* flex: wrap; */
+          height: 400px;
+          vertical-align: baseline;
+          margin: 10px;
+          padding: 10px;
+          text-align: left;
+          border-radius: 10px;
+          overflow: hidden;
 
-            width: 50%;
-            max-height: 190px;
-            margin: 0 10px;
+          & img {
+            width: 30%;
+            height: 100%;
             border-radius: 10px;
-            overflow: hidden;
+            object-fit: cover;
+          }
 
-            & img {
-              position: relative;
-              width: 100%;
-              max-height: 80%;
-              object-fit: cover;
+          & .project-info {
+            display: inline-block;
+            width: 65%;
+            vertical-align: top;
+            padding: 10px 20px;
+
+            & .project-technologies {
+              height: 10%;
+              margin-bottom: 30px;
+              & span {
+                margin-right: 20px;
+              }
             }
 
-            & span {
-              color: var(--opposite-text-color);
+            & .project-about {
+              height: 70%;
+            }
+
+            & .project-btns {
+              height: 20%;
             }
           }
         }
