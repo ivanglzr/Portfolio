@@ -13,13 +13,16 @@
   <body>
     <header id="header" class="floated-div">
       <h1 id="title">Ivan Gonzalez</h1>
-      <nav id="header-nav">
+
+      <!--? El nav de momento no es necesario  -->
+      <!-- <nav id="header-nav">
         <ul>
           <li><a target="_blank" href="#">Certificates</a></li>
           <li><a target="_blank" href="#">Projects</a></li>
           <li><a target="_blank" href="#">Contact me</a></li>
         </ul>
-      </nav>
+      </nav> -->
+
       <div id="toggle-theme-container">
         <button id="toggle-theme-btn">
           <i class="fa-solid fa-moon" id="toggle-theme-icon"></i>
@@ -28,64 +31,95 @@
       </div>
     </header>
     <main>
-      <aside id="about-aside" class="main-div floated-div">
-        <img
-          id="about-aside-img"
-          src="https://www.fichajes.com/build/images/player-covers/ronald-araujo.af58046a.jpg"
-          alt=""
-        />
-        <nav id="social-nav">
-          <ul>
-            <li>
-              <a href="" target="_blank">
-                <i
-                  class="fa-solid fa-file icon"
-                  style="--hover-color: #777"
-                ></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/ivanglzr" target="_blank">
-                <i
-                  class="fa-brands fa-github icon"
-                  style="--hover-color: #888"
-                ></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com" target="_blank">
-                <i
-                  class="fa-brands fa-instagram icon"
-                  style="--hover-color: #f6336c"
-                ></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div id="contact-info">
-          <a href="tel:672-27-37-51">
-            <span>+34 672 27 37 51</span>
-          </a>
-          <a
-            target="_blank"
-            href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkVXldrsqdfmBsQmfpchLBprMnsbsBjcfjxVzJFZDxMDXqwqxBwgjxpqXGtwRBGBSCmsWT"
-          >
-            <span>ivanglzr01@gmail.com</span>
-          </a>
+      <aside id="about-aside" class="center">
+        <div id="aside-info-container" class="floated-div">
+          <img
+            id="about-aside-img"
+            src="https://www.fichajes.com/build/images/player-covers/ronald-araujo.af58046a.jpg"
+            alt=""
+          />
+          <nav id="social-nav">
+            <ul>
+              <li>
+                <a href="" target="_blank">
+                  <i
+                    class="fa-solid fa-file icon"
+                    style="--hover-color: #777"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/ivanglzr" target="_blank">
+                  <i
+                    class="fa-brands fa-github icon"
+                    style="--hover-color: #888"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com" target="_blank">
+                  <i
+                    class="fa-brands fa-instagram icon"
+                    style="--hover-color: #f6336c"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div id="contact-info">
+            <a href="tel:672-27-37-51" class="link">
+              <span>+34 672 27 37 51</span>
+            </a>
+            <a
+              target="_blank"
+              href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkVXldrsqdfmBsQmfpchLBprMnsbsBjcfjxVzJFZDxMDXqwqxBwgjxpqXGtwRBGBSCmsWT"
+              class="link"
+            >
+              <span>ivanglzr01@gmail.com</span>
+            </a>
+          </div>
+          <div id="about-info">
+            <h2 class="subtitle">About Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+              praesentium cupiditate vero dolorem reprehenderit veniam sit quia
+              minus, dignissimos a! Lorem ipsum dolor sit amet consectetur,
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
+              totam nesciunt enim quia. Harum excepturi, sapiente assumenda
+              natus ullam molestiae quis cum magni corporis minima inventore
+              error, neque
+            </p>
+          </div>
         </div>
-        <div id="about-info">
-          <h2 class="subtitle">About Me</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
-            praesentium cupiditate vero dolorem reprehenderit veniam sit quia
-            minus, dignissimos a! Lorem ipsum dolor sit amet consectetur, Lorem
-            ipsum dolor sit amet consectetur, adipisicing elit. Itaque totam
-            nesciunt enim quia. Harum excepturi, sapiente assumenda natus ullam
-            molestiae quis cum magni corporis minima inventore error, neque
-          </p>
+        <div id="certificates" class="floated-div">
+          <h2 class="subtitle">Certificates</h2>
+          <div class="certificate">
+            <a href="https://udemy.com">
+              <img src="./assets/images/angular_blog.png" alt="" />
+              <span class="link">Master en frameworks de JavaScript</span>
+            </a>
+          </div>
+          <div class="certificate">
+            <a href="https://udemy.com">
+              <img src="./assets/images/quiz_game.png" alt="" />
+              <span class="link">Master en PHP y Laravel</span>
+            </a>
+          </div>
+          <div class="certificate">
+            <a href="https://udemy.com">
+              <img src="./assets/images/weather_app.png" alt="" />
+              <span class="link">Curso de React de Midudev</span>
+            </a>
+          </div>
+          <div class="certificate">
+            <a href="https://udemy.com">
+              <img src="./assets/images/users_api.png" alt="" />
+              <span class="link">Curso de NodeJS</span>
+            </a>
+          </div>
         </div>
       </aside>
-      <section id="projects-skills" class="main-div floated-div">
+      <section id="projects-skills" class="center floated-div">
         <h2 class="subtitle">Projects</h2>
         <div id="projects-container">
           <div id="skills">

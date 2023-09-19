@@ -22,8 +22,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.center {
+  text-align: center;
+}
+
 .floated-div {
   background: var(--floated-divs-bg);
+  border-radius: 20px;
 }
 
 a {
@@ -54,6 +59,14 @@ a {
   opacity: 0.8;
 }
 
+.link {
+  color: var(--text-color);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 body {
   display: grid;
   gap: 10px;
@@ -77,16 +90,17 @@ body.light {
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   border-radius: 20px;
   text-align: center;
 
-  #title {
-    flex: 0.3;
+  & > * {
+    margin: 0 100px;
   }
 }
 
-#header-nav {
+/*? Estilos del nav */
+/* #header-nav {
   flex: 0.55;
   text-align: center;
 
@@ -109,11 +123,9 @@ body.light {
       }
     }
   }
-}
+} */
 
 #toggle-theme-container {
-  flex: 0.15;
-
   & #toggle-theme-btn {
     background: transparent;
     display: flex;
@@ -153,70 +165,90 @@ body.light {
 
 main {
   display: flex;
-  align-items: stretch;
   gap: 10px;
 
-  .main-div {
-    text-align: center;
-    border-radius: 20px;
-  }
-
   & aside {
-    width: 25%;
-    height: min-content;
-    padding: 20px;
+    flex: 0.35;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & #aside-info-container {
+      height: min-content;
+      padding: 20px;
 
-    & #about-aside-img {
-      width: 175px;
-      height: 175px;
-      object-fit: cover;
-      margin: 10px;
-      border-radius: 50%;
-    }
+      & #about-aside-img {
+        width: 175px;
+        height: 175px;
+        object-fit: cover;
+        margin: 10px;
+        border-radius: 50%;
+      }
 
-    & #social-nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      & ul {
+      & #social-nav {
+        width: 100%;
         display: flex;
-        & li {
-          list-style: none;
-          margin: 0 10px;
-          & a {
-            color: var(--text-color);
+        justify-content: center;
+        align-items: center;
+
+        & ul {
+          display: flex;
+          & li {
+            list-style: none;
+            margin: 0 10px;
+            & a {
+              color: var(--text-color);
+            }
           }
         }
       }
-    }
 
-    & #contact-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 15px;
+      & #contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+      }
 
-      & a {
-        color: var(--text-color);
-
-        &:hover {
-          text-decoration: underline;
+      & #about-info {
+        margin-top: 15px;
+        & p {
+          text-align: left;
         }
       }
     }
+  }
 
-    & #about-info {
-      margin-top: 15px;
-      & p {
-        text-align: left;
+  & #certificates {
+    flex: 0.25;
+    padding: 20px;
+
+    & .certificate {
+      width: 100%;
+      margin-top: 20px;
+      padding: 10px;
+      & a {
+        background: var(--body-bg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 10px;
+        & img {
+          width: 80%;
+          height: 120px;
+          margin: 0 auto;
+          overflow: hidden;
+          object-fit: cover;
+        }
+        & span {
+          margin-top: 10px;
+        }
       }
     }
   }
 
   & #projects-skills {
-    width: 75%;
+    flex: 1;
     padding: 20px;
 
     & #projects-container {
